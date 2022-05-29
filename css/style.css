@@ -295,6 +295,71 @@ p {
   color: #FE0002;
 }
 
+.social {
+  position: absolute;
+  left: 88px;
+  bottom: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  margin-bottom: 18px;
+}
+
+.social__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.social__link--pinterest {
+  background-image: url(../img/social/Pintrest.svg);
+}
+
+.social__link--behance {
+  background-image: url(../img/social/Behance.svg);
+}
+
+.social__link--dribbble {
+  background-image: url(../img/social/Dribbble.svg);
+}
+
+.social__link--snapchat {
+  background-image: url(../img/social/Snapchat.svg);
+}
+
+.social__link--linkedin {
+  background-image: url(../img/social/Linkedin.svg);
+}
+
+.social__link--facebook {
+  background-image: url(../img/social/Facebook.svg);
+}
+
+.social--row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.social--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -302,7 +367,7 @@ p {
 }
 
 .first {
-  padding: 169px 0 40px;
+  padding-top: 169px;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(18.5%, transparent), color-stop(18.5%, #FFEA2F), to(#FFEA2F));
   background-image: linear-gradient(to right, transparent 18.5%, #FFEA2F 18.5%, #FFEA2F);
 }
@@ -319,8 +384,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  min-height: 733px;
-  padding-top: 65px;
+  min-height: 773px;
+  padding-top: 24px;
 }
 
 .first__info {

@@ -169,6 +169,66 @@ p {
 	}
 }
 
+// Social
+
+.social {
+	position: absolute;
+	left: 88px;
+	bottom: 0;
+
+	z-index: 100;
+
+	display: flex;
+	align-items: center;
+
+	&__item {
+		margin-bottom: 18px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 32px;
+		height: 32px;
+
+		&--pinterest {
+			background-image: url(../img/social/Pintrest.svg);
+		}
+
+		&--behance {
+			background-image: url(../img/social/Behance.svg);
+		}
+
+		&--dribbble {
+			background-image: url(../img/social/Dribbble.svg);
+		}
+
+		&--snapchat {
+			background-image: url(../img/social/Snapchat.svg);
+		}
+
+		&--linkedin {
+			background-image: url(../img/social/Linkedin.svg);
+		}
+
+		&--facebook {
+			background-image: url(../img/social/Facebook.svg);
+		}
+	}
+
+	&--row {
+		flex-direction: row;
+	}
+
+	&--column {
+		flex-direction: column;
+	}
+}
+
+
 // * Main
 
 .main {
@@ -178,7 +238,7 @@ p {
 // * First
 
 .first {
-	padding: 169px 0 40px;
+	padding-top: 169px;
 
 	background-image: linear-gradient(
 		to right,
@@ -193,9 +253,9 @@ p {
 
 		position: relative;
 
-		min-height: 733px;
+		min-height: 773px;
 
-		padding-top: 65px;
+		padding-top: 24px;
 	}
 
 	&__info {

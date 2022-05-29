@@ -1,0 +1,57 @@
+// Google fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Ubuntu:wght@700&display=swap');
+
+// Akrobat font
+
+@font-face {
+	font-family: 'Akrobat';
+	font-weight: 300;
+	src: url('../fonts/Akrobat-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Akrobat';
+	font-weight: 400;
+	src: url('../fonts/Akrobat-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Akrobat';
+	font-weight: 600;
+	src: url('../fonts/Akrobat-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Akrobat';
+	font-weight: 700;
+	src: url('../fonts/Akrobat-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Akrobat';
+	font-weight: 800;
+	src: url('../fonts/Akrobat-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Akrobat';
+	font-weight: 900;
+	src: url('../fonts/Akrobat-Bold.otf') format('opentype');
+}
+
+// Proxima Nova font
+
+	@font-face {
+		font-family: 'Proxima Nova';
+		font-weight: 400;
+		src: url(../fonts/proximanova_regular.ttf) format('truetype');
+	}
+
+	// Zona pro font
+
+	@font-face {
+		font-family: 'Zona pro';
+		font-weight: 800;
+		src: url(../fonts/ZonaPro-ExtraBold.woff) format('woff');
+	}

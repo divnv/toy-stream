@@ -103,6 +103,8 @@ p {
 	&__logo {
 		display: inline-block;
 
+		flex-shrink: 0;
+
 		width: 135px;
 		height: 75px;
 
@@ -124,6 +126,8 @@ p {
 		align-items: center;
 	}
 
+	&__nav {}
+	
 	&__lang {
 		width: 120px;
 		height: 120px;
@@ -172,10 +176,7 @@ p {
 // Social
 
 .social {
-	position: absolute;
-	left: 88px;
-	bottom: 0;
-
+	
 	z-index: 100;
 
 	display: flex;
@@ -249,13 +250,12 @@ p {
 	&__container {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
 
 		position: relative;
 
 		min-height: 773px;
 
-		padding-top: 24px;
+		padding-top: 158px;
 	}
 
 	&__info {
@@ -312,7 +312,230 @@ p {
 		width: 786px;
 		height: 733px;
 		position: absolute;
-		top: 0;
+		bottom: 40px;
 		right: 40px;
 	}
+
+	&__social {
+		position: absolute;
+		left: 88px;
+		bottom: 0;
+	}
+} 
+
+//? Media queryes 
+
+@media (max-width: 1024px) {
+
+	.wrapper {}
+
+	.container {}
+
+	.header {
+	
+			&__container {
+				padding-left: 46px;
+			}
+	
+			&__logo {}
+	
+			&__links {}
+	
+			&__nav {
+				display: none;
+			}
+	
+			&__lang {}
+	}
+	.nav {
+	
+			&__list {}
+	
+			&__item {
+	
+				&--active {}
+			}
+	
+			&__link {}
+	}
+	.btn {}
+
+	.main {}
+
+	.first {
+
+		background-image: linear-gradient(
+			to right,
+			transparent 9.5%,
+			$PrimaryColor 9.5%,
+			$PrimaryColor);
+	
+			&__container {
+				min-height: 1300px;
+
+				padding-top: 16px;
+				padding-left: 46px;
+			}
+	
+			&__info {}
+	
+			&__title {
+				margin-bottom: 25px;
+				max-width: 860px;
+			}
+	
+			&__subblock {
+				margin-left: 0;
+			}
+	
+			&__btn {}
+	
+			&__desc {}
+	
+			&__img {
+				right: 50px;
+				bottom: 42px;
+			}
+
+			&__social {
+				left: 46px;
+				top: 552px;
+				bottom: none;
+			}
+	}
+	.social {
+	
+			&--column {}
+	
+			&__item {}
+	
+			&__link {
+	
+				&--pinterest {}
+	
+				&--behance {}
+	
+				&--dribbble {}
+	
+				&--snapchat {}
+	
+				&--linkedin {}
+	
+				&--facebook {}
+			}
+	}
+
+	.footer {}
+}
+
+@media (max-width: 375px) {
+
+	.wrapper {}
+
+	.container {}
+
+	.header {
+	
+			&__container {
+				// padding-left: 46px;
+			}
+	
+			&__logo {}
+	
+			&__links {}
+	
+			&__nav {
+				// display: none;
+			}
+	
+			&__lang {
+				width: 98px;
+				height: 98px;
+			}
+	}
+	.nav {
+	
+			&__list {}
+	
+			&__item {
+	
+				&--active {}
+			}
+	
+			&__link {}
+	}
+	.btn {}
+
+	.main {}
+
+	.first {
+
+		padding-top: 130px;
+
+		background-image: linear-gradient(
+			to right,
+			transparent 18.5%,
+			$PrimaryColor 18.5%,
+			$PrimaryColor);
+	
+			&__container {
+				// min-height: 1300px;
+
+				// padding-top: 16px;
+				padding-left: 14px;
+			}
+	
+			&__info {}
+	
+			&__title {
+				font-size: 32px;
+
+				// margin-bottom: 25px;
+				// max-width: 860px;
+			}
+	
+			&__subblock {
+				// margin-left: 0;
+			}
+	
+			&__btn {}
+	
+			&__desc {
+				font-size: 16px;
+			}
+	
+			&__img {
+				// right: 50px;
+				// bottom: 42px;
+			}
+
+			&__social {
+				// left: 46px;
+				// top: 552px;
+				// bottom: none;
+			}
+	}
+	.social {
+	
+			&--column {}
+	
+			&__item {}
+	
+			&__link {
+	
+				&--pinterest {}
+	
+				&--behance {}
+	
+				&--dribbble {}
+	
+				&--snapchat {}
+	
+				&--linkedin {}
+	
+				&--facebook {}
+			}
+	}
+
+	.footer {}
 }

@@ -230,6 +230,8 @@ p {
 
 .header__logo {
   display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 135px;
   height: 75px;
   background-image: url(../img/header/logo.svg);
@@ -296,9 +298,6 @@ p {
 }
 
 .social {
-  position: absolute;
-  left: 88px;
-  bottom: 0;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,12 +379,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   min-height: 773px;
-  padding-top: 24px;
+  padding-top: 158px;
 }
 
 .first__info {
@@ -443,6 +439,67 @@ p {
   width: 786px;
   height: 733px;
   position: absolute;
-  top: 0;
+  bottom: 40px;
   right: 40px;
+}
+
+.first__social {
+  position: absolute;
+  left: 88px;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .header__container {
+    padding-left: 46px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .first {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(9.5%, transparent), color-stop(9.5%, #FFEA2F), to(#FFEA2F));
+    background-image: linear-gradient(to right, transparent 9.5%, #FFEA2F 9.5%, #FFEA2F);
+  }
+  .first__container {
+    min-height: 1300px;
+    padding-top: 16px;
+    padding-left: 46px;
+  }
+  .first__title {
+    margin-bottom: 25px;
+    max-width: 860px;
+  }
+  .first__subblock {
+    margin-left: 0;
+  }
+  .first__img {
+    right: 50px;
+    bottom: 42px;
+  }
+  .first__social {
+    left: 46px;
+    top: 552px;
+    bottom: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__lang {
+    width: 98px;
+    height: 98px;
+  }
+  .first {
+    padding-top: 130px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(18.5%, transparent), color-stop(18.5%, #FFEA2F), to(#FFEA2F));
+    background-image: linear-gradient(to right, transparent 18.5%, #FFEA2F 18.5%, #FFEA2F);
+  }
+  .first__container {
+    padding-left: 14px;
+  }
+  .first__title {
+    font-size: 32px;
+  }
+  .first__desc {
+    font-size: 16px;
+  }
 }
